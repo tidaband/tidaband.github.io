@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Targol Khalighi</title>
+  <link rel="stylesheet" href="css/style2.css">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="css/style3.css">
+  <link rel="stylesheet" href="css/style4.css">
+  <link rel="stylesheet" href="css/style5.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+      <style>
+      /* NOTE: The styles were added inline because Prefixfree needs access to your styles and they must be inlined if they are on local disk! */
+
+		#go-again {
+		  cursor: pointer;
+		  position: absolute;
+		  bottom: 5vh;
+		  right: 5vw;
+		  color: #9a9a9a;
+		  font-family: Futura, Helvetica Neue;
+		}
+
+		#stage {
+		  position: absolute;
+		  top: calc(50vh - 6vh);
+		  left: calc(50vw - 20vw);
+		  text-align: center;
+		  width: 40vw;
+		  height:100px;
+		  font-size: 4vh;
+		  line-height: 1;
+		  letter-spacing: 0.5vh;
+		  -webkit-filter: contrast(20);
+		}
+
+		h1 {
+		  display: none;
+		  font-family: Futura, Helvetica Neue;
+		  color: rgba(192, 192, 192, 0.8);
+		  font-size: 3rem;
+		}
+
+		h1.letterified {
+		  display: initial;
+		}
+
+		[data-letter] {
+		  transform: translate3d(0, 0, 0);
+		  position: relative;
+		  font-weight: 100;
+		  margin: 0 4px;
+		  left: 0;
+		  opacity: 0;
+		  animation: 2s focus 1s forwards ease-in-out, 2s blur 5s forwards ease-in-out, 2s slideright 5s forwards ease-in-out;
+		}
+
+		[data-letter="H"], [data-letter="E"], [data-letter="S"], [data-letter="A"], [data-letter="M"] {
+		  font-weight: 300;
+		  opacity: 1;
+		  filter: blur(0px), contrast(0);
+		  animation: slideleft 1s ease-in-out,  fadein 2s ease-in-out,  2s blur 5s alternate forwards ease-in-out,  2s slideright 5s forwards ease-in-out;
+		}
+
+		@keyframes fadein {
+		  from {
+			opacity: 0;
+		  }
+		  to {
+			opacity: 1;
+		  }
+		}
+		@keyframes slideleft {
+		  from {
+			left: -7px;
+		  }
+		  to {
+			left: 0px;
+		  }
+		}
+		@keyframes slideright {
+		  from {
+			left: 0px;
+		  }
+		  to {
+			left: -50px;
+		  }
+		}
+		@keyframes focus {
+		  from {
+			opacity: 0;
+			/*color: white;*/
+			-webkit-filter: blur(10px);
+		  }
+		  to {
+			/*color: black;*/
+			opacity: 1;
+			-webkit-filter: blur(0px);
+		  }
+		}
+		@keyframes blur {
+		  from {
+			/*color: black;*/
+			opacity: 1;
+			-webkit-filter: blur(0px);
+		  }
+		  to {
+			/*color: white;*/
+			opacity: 0;
+			-webkit-filter: blur(10px);
+		  }
+		}
+
+		#fp-nav ul li .fp-tooltip {
+		 position:absolute;
+		 top:-2px;
+		 color:#fff;
+		 font-size:14px;
+		 font-family:arial,helvetica,sans-serif;
+		 white-space:nowrap;
+		 max-width:220px;
+		 overflow:hidden;
+		 display:none;
+		 opacity:0;
+		 width:0
+		}
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+	<div id="fullpage">
+    <div class="section" id="section1">
+      <canvas id="nokey" width="800" height="800">
+		Your Browser Don't Support Canvas, Please Download Chrome ^_^``
+		</canvas>
+		<script  src="js/index2.js"></script>
+		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script  src="js/index1.js"></script>
+		<div class="moving-zone">
+			<div class="popup">
+				<div class="popup-content">
+				</div>
+			</div>
+		</div>
+    </div>
+    <div class="section" id="section2">
+		<div class="title">ترگل خلیقی</div>
+		<div class="col-xs-1">
+		</div>
+		<div class="col-xs-10">
+			<h3 class="headline info"></h3>
+		</div>
+		<div class="col-xs-1">
+		</div>
+		<div class="frames"></div>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+		<script  src="js/index4.js"></script>
+	</div>
+    <div class="section" id="section3">
+    <div class="slide" id="slide1"> 
+		<div class="ts"></div>
+		<div class="title2">بهره گیری از اساتید</div>
+		<pre class="title3">هوشنگ ظريف     محمود بهروز     محسن نفر     شهريار فريوسفي</pre>
+	</div>
+    <div class="slide" id="slide2"> 
+		<div class="title2">همکاری با گروه های</div>
+		<pre class="rightTI li">اشتياق  (عليرضا قرباني )          سيمرغ  ( همايون شجريان ، حميد متبسم )          اردشير كامكار           اركستر ملي  ( برديا كيارس )          بيژن كامكار          خنياگران مهر (  بهزاد عبدي  )          مهر  ( محمد معتمدي )           آنسامبل تهران  ( مهيار عليزاده )          مهتاب          پاليز      </pre>
+	</div>
+    <div class="slide" id="slide3"> 
+		<div class="title2">ضبط آلبوم هاي</div>
+		<pre class="rightTI li">سيمرغ  ( همايون شجريان )          در آيينه اوهام  (حسام اینانلو )          گاهي سه گاهي ( محمد معتمدي )          ابروكمان ( محمد معتمدي ، احسان ذبيحي فر)           در شعله با تو رقصان ( مهيار عليزاده )           هيچ مگو ( مجتبي عسگري )           آن روزها ( وحيد تاج، فريدون پوررضا )          پرده نشين  ( مهيار عليزاده )          زعفرانی  ( مهيار عليزاده )       </pre>
+	</div>
+    <div class="slide" id="slide4"> 
+		<div class="title2">شركت در فستيوالهاي بين المللي به صورت تكنوازي و گروه نوازي و كسب مقام در کشور های</div>
+		<pre class="title3"> كويت           هلند          آلمان          سوييس          ايتاليا          ابوظبي          چين          عراق            اکراین  </pre>
+	</div>
+    </div>
+    <div class="section" id="section4">
+		<div id="stage">
+			<h1></h1>
+		</div>
+		<script  src="js/index6.js"></script> 
+		<a href="https://www.instagram.com/targolkhalighi/" class="il"></a>
+	</div>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script>
+    <script  src="js/index3.js"></script>
+</body>
+
+</html>
