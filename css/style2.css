@@ -1,3 +1,17 @@
+
+@font-face {
+	font-family: 'IranSans-Bold';
+	src: url('../fonts/IrSW_B.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'IranSans-Medium';
+	src: url('../fonts/IrSW_M.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
 *{
     -webkit-box-sizing: border-box;
     box-sizing: border-box;

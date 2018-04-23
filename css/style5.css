@@ -1,22 +1,22 @@
-body {
-    font-family: "Playfair Display", Helvetica, Arial, sans-serif;
-	font-weight: 300;
-	background-color: #fafafa;
-	
-}
 
 @font-face {
 	font-family: 'IranSans-Bold';
-	src: url('http://bayanbox.ir/download/3015135100739220516/IRANSansWeb-Bold.woff') format('woff');
+	src: url('../fonts/IrSW_B.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'IranSans-Medium';
-	src: url('http://bayanbox.ir/download/2056319774417289822/IRANSansWeb-Medium.woff') format('woff');
+	src: url('../fonts/IrSW_M.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
+}
+body {
+    font-family: "Playfair Display", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	background-color: #fafafa;
+	
 }
 
 body{
