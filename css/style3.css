@@ -1,0 +1,74 @@
+#section1{
+background-color:#0FF; 
+}
+.section-content{
+/*border:1px solid #F00;*/
+
+}
+h1{
+  margin:0;
+  color:white;
+}
+h1 i.fa{
+font-size:3em;
+color:white;
+transition:all 0.3s ease-in-out;
+}
+i.fa:hover{
+color:white;
+cursor:pointer;
+transform:scale(1.2) rotate(10deg);
+}  
+#section2{
+background-color:white; 
+}
+#section3{
+background-color:#0ff; 
+}
+.slide{
+background-size:cover;
+  background-position:center;
+}  
+#slide1{
+background-color:black; 
+background: url(../img/ts.jpg) no-repeat center top;
+background-size:cover;
+}  
+#slide2{
+background-color:black; 
+background: url(../img/g.jpg) no-repeat center top;
+background-size:cover;
+}  
+#slide3{
+background-color:black; 
+background: url(../img/c.jpg) no-repeat center top;
+background-size:cover;
+}  
+#slide4{
+background-color:black; 
+background: url(../img/3.jpg) no-repeat center top;
+background-size:cover;
+}  
+.ts{
+	width:305px;
+	height:174px;
+	
+	position:absolute;
+	top:20px;
+	margin-top:60px;
+	left:10%;
+}
+#section4{
+background-color:black; 
+background: url(../img/f.jpg) no-repeat center center;
+background-size:cover;
+}
+#section5{
+background-color:#923; 
+}
+#fp-nav ul li a span {
+  background-color: white;
+}
+.fp-slidesNav ul li a span {
+  background-color: white;
+}
