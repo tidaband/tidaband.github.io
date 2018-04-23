@@ -139,29 +139,8 @@
 		Your Browser Don't Support Canvas, Please Download Chrome ^_^``
 		</canvas>
 		<script  src="js/index2.js"></script>
-		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-		<script  src="js/index11.js">
-			var moveForce = 40; // max popup movement in pixels
-			var rotateForce = 30; // max popup rotation in deg
-
-			$(document).mousemove(function(e) {
-				var docX = document.getElementById('nokey').width;
-				var docY = document.getElementById('nokey').height;
-				
-				var moveX = (e.pageX - docX/2) / (docX/2) * -moveForce;
-				var moveY = (e.pageY - docY/2) / (docY/2) * -moveForce;
-				
-				var rotateY = (e.pageX / docX * rotateForce*2) - rotateForce;
-				var rotateX = -((e.pageY / docY * rotateForce*2) - rotateForce);
-				
-				$('.popup')
-					.css('left', moveX+'px')
-					.css('top', moveY+'px')
-					.css('transform', 'rotateX('+rotateX+'deg) rotateY('+rotateY+'deg)');
-			});
-		
-		
-		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+		<script  src="js/index1.js"></script>
 		<div class="moving-zone">
 			<div class="popup">
 				<div class="popup-content">
@@ -209,7 +188,7 @@
 		<a href="https://www.instagram.com/targolkhalighi/" class="il"></a>
 	</div>
     </div>
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.4/jquery.fullPage.min.js'></script>
     <script  src="js/index3.js"></script>
 </body>
