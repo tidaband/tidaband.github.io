@@ -1,0 +1,56 @@
+.modern{
+	font-family: 'Raleway', sans-serif !important;
+}
+.serif{
+	font-family: 'DM Serif Text', serif !important;
+}
+.number{
+	font-family: 'Cabin', sans-serif;
+}
+.lightfont{
+	font-weight:300;
+}
+#myVideo{
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+	padding:0;
+}
+.nom{
+	margin:0 !important;
+	padding:0 !important;
+}
+.color1{
+	color:black !important;
+}
+.justify{
+	text-align: justify;
+	text-justify: inter-word;	
+}
+.active{
+	color:#4e72b1 !important;
+}
+.black{
+	color:black;
+}
+.blue{
+	background-color:#267cae;
+	
+}
+.red{
+	background-color:red;
+	
+}
+.active-c{
+	background-color:#b71056;
+}
+.darker{
+	filter: brightness(85%);
+}
+.hoverable .row:hover {
+    opacity: 0.7;
+	cursor:pointer;
+}
+
+
+

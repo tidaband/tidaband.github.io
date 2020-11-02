@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'serif';
+    src: url('serif.woff2') format('woff2'),
+         url('serif.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+
+}
+body{
+	font-family: 'DM Serif Text', serif !important;
+	background-color:black;
+	overflow:hidden !important;
+	
+}
+html{
+	overflow:hidden !important;
+}
+.image{
+	
+}
+.center1{
+	
+  position: absolute;
+  text-align: center;
+   top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+}
+.color1{
+	color:#4e72b1 !important;
+}
+.targol{
+	width:360px;
+	height:520px;
+	background-image:url("../img/targol.jpg");
+	background-size: cover;
+	
+}
+.tar{
+	position: absolute;
+  text-align: center;
+   
+  top:20%;
+  left: 50%;
+  transform: translateX(-50%);
+	width:93px;
+	height:360px;
+  background-image:url("../img/tar.png");
+  background-size: cover;
+}
+
+
+h1{
+	
+}

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">			
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alphardex/aqua.css@master/dist/aqua.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+		<script src="https://kit.fontawesome.com/68301943d0.js" crossorigin="anonymous"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/footer.css">	
+<style>
+	
+bodi {
+	 
+	 background: black;
+}
+ .clock-loader {
+	 --clock-color: var(--primary-color);
+	 --clock-width: 4rem;
+	 --clock-radius: calc(var(--clock-width) / 2);
+	 --clock-minute-length: calc(var(--clock-width) * 0.4);
+	 --clock-hour-length: calc(var(--clock-width) * 0.2);
+	 --clock-thickness: 0.2rem;
+	 position: relative;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 width: var(--clock-width);
+	 height: var(--clock-width);
+	 border: 3px solid var(--clock-color);
+	 border-radius: 50%;
+}
+ .clock-loader::before, .clock-loader::after {
+	 position: absolute;
+	 content: "";
+	 top: calc(var(--clock-radius) * 0.25);
+	 width: var(--clock-thickness);
+	 background: var(--clock-color);
+	 border-radius: 10px;
+	 transform-origin: center calc(100% - calc(var(--clock-thickness) / 2));
+	 animation: spin infinite linear;
+}
+ .clock-loader::before {
+	 height: var(--clock-minute-length);
+	 animation-duration: 2s;
+}
+ .clock-loader::after {
+	 top: calc(var(--clock-radius) * 0.25 + var(--clock-hour-length));
+	 height: var(--clock-hour-length);
+	 animation-duration: 15s;
+}
+ @keyframes spin {
+	 to {
+		 transform: rotate(1turn);
+	}
+}
+ 
+
+</style>	
+	</head>
+	<script>
+		
+</script>
+	<body class="serif">
+	<h1 class="text-center mt-md-5 mt-sm-1 color1 serif mb-3 ">Targol Khalighi</h1>	
+	<nav class="navbar navbar-expand-lg navbar-light text-center mx-auto serif" style="overflow-x:scroll !important;">
+			  
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse justify-content-center serif "  id="collapsibleNavbar">
+				<ul class="navbar-nav ">
+				  <li class="nav-item color1">
+				  <li class="nav-item">
+					<a class="nav-link serif mx-3" href="../tida/tida.html" style="color:#e01b49;"><h4>TidaBand</h4></a>
+				  </li>
+					<a class="nav-link serif mx-3" href="../1main/main.html"><h4>Home</h4></a>
+				  </li>
+				  <li class="nav-item color1">
+					<a class="nav-link serif mx-3 " href="../Bio/Bio.html"><h4>Biography</h4></a>
+				  </li>
+				  <li class="nav-item color1">
+					<a class="nav-link serif mx-3 active" href="../discography/discography.html"><h4>Discography</h4></a>
+				  </li>
+				  <li class="nav-item color1">
+					<a class="nav-link serif mx-3"  href="../events/events.html"><h4>Events</h4></a>
+				 </li> 
+				  <li class="nav-item color1">
+					<a class="nav-link serif mx-3  " href="../5videoGallery%20-%20Copy/videos.html"><h4>Videos</h4></a>
+				  </li> 
+				<li class="nav-item color1">
+					<a class="nav-link serif mx-3" href="../4img Gallery/Photos.html"><h4>Photos</h4></a>
+				 </li>  
+				 <li class="nav-item color1">
+					<a class="nav-link serif mx-3" href="../dashboard/dashboard.html"><h4>Academy</h4></a>
+				 </li> 
+				 <li class="nav-item color1">
+					<a class="nav-link serif mx-3 "  href="../contact/contact.html"><h4>Contact</h4></a>
+				 </li>
+				</ul>
+			  </div>  
+			</nav>
+	
+
+			<div class="fixed-bottom  p-0 m-0">
+			
+				<audio  id="mya" style="width:100%; margin:0; padding:0;" controls>
+								  
+								Your browser does not support the audio element.
+								</audio>
+								<div class="col mb-5 black justify-content-center text-center loading bg-dark">
+							
+								
+							<div class="container justify-content-center align-items-center">
+								<div class="fixed-bottom p-3 text-center bg-dark col-md-2 col-sm-8 text-white" id="sound" style="border-radius: 50px 50px 0px 0px; margin:auto;"> <div class="clock-loader mx-auto" ></div>
+								<h4 class="text-white modern">Please wait...</h4></div>
+							</div>
+						</div>
+			</div>
+		<div class="container text-white">
+		
+			<div class="row blue serif">
+				<div class="col-md-5  my-auto">
+					<img class="my-5" src="cover.png" style="width:100%; height:auto;"></img>
+					
+				</div>
+				
+				<div class="col-md-7 my-auto">
+					<div class="row">
+						<div class="col mb-5 black">
+							<h1 class=" display-4">NightBird</h1>
+							<h3 class="">( Morgh-e Shab )</h3>
+						</div>
+						<div class="col mb-5 black justify-content-center text-center loading">
+							
+								<div class="clock-loader mx-auto" ></div>
+								<h4 class="text-white modern">Please wait...</h4>
+							
+						</div>
+					</div>
+					
+					<div class="col my-auto">
+						<div class="row mb-md-0 mb-3">
+							<div class="col-sm-5">
+								<h2 class="lightfont ">NightBird</h2>
+							</div>
+							<div class="col-sm-7">
+								
+							</div>
+						</div>
+						
+						<!--<div class="row">
+							<div class="col-1">
+								<i class="fas fa-play fa-lg"></i>
+								
+							</div>
+							<div class="col-11">
+								<input type="range" class="custom-range" id="customRange1" min="0" max="100" value="0" step="1">
+								
+							</div>
+							
+						</div>-->
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="hoverable">
+				<div class="row blue darker py-2 modern musics" data-src="http://snd.tebyan.net/1388/02/20090520102449788.mp3">
+					<div class="col-md-1 col-2 my-auto">
+						<i class="fas fa-play"></i>
+					</div>
+					<div class="col-md-2 col-8 my-auto">
+						<h3 class="lightfont">Night Bird</h3>
+						
+					</div>
+					<div class="col-md-1 col-2 number my-auto">
+						<h4 class="lightfont">3:10</h4>
+					</div>
+					<div class="col-md-8 col-12 my-auto">
+						<h4 class="lightfont text-center text-md-right p-0 m-0">Download on <i class="fab fa-spotify"></i></h4>
+					</div>
+				</div>
+				<div class="row blue py-2 modern musics" data-src="http://snd.tebyan.net/1388/02/20090520102440991.mp3">
+					<div class="col-md-1 col-2   my-auto">
+						<i class="fas fa-play"></i>
+					</div>
+					<div class="col-md-2 col-8  my-auto">
+						<h3 class="lightfont">Night Bird</h3>
+						
+					</div>
+					<div class="col-md-1 col-2 number my-auto">
+						<h4 class="lightfont">3:10</h4>
+					</div>
+					<div class="col-md-8 col-12  my-auto">
+						<h4 class="lightfont text-right p-0 m-0">Download on <i class="fab fa-spotify"></i></h4>
+					</div>
+				</div>
+				<div class="row blue darker py-2 modern musics" data-src="http://snd.tebyan.net/1388/02/20090520102441804.mp3">
+					<div class="col-md-1 col-2   my-auto">
+						<i class="fas fa-play"></i>
+					</div>
+					<div class="col-md-2 col-8  my-auto">
+						<h3 class="lightfont">Night Bird</h3>
+						
+					</div>
+					<div class="col-md-1 col-2 number my-auto">
+						<h4 class="lightfont">3:10</h4>
+					</div>
+					<div class="col-md-8 col-12  my-auto">
+						<h4 class="lightfont text-right p-0 m-0">Download on <i class="fab fa-spotify"></i></h4>
+					</div>
+				</div>
+				<div class="row blue py-2 modern musics" data-src="http://snd.tebyan.net/1388/02/20090520102442460.mp3">
+					<div class="col-md-1 col-2   my-auto">
+						<i class="fas fa-play"></i>
+					</div>
+					<div class="col-md-2 col-8  my-auto">
+						<h3 class="lightfont">Night Bird</h3>
+					</div>
+					<div class="col-md-1 col-2 number my-auto">
+						<h4 class="lightfont">3:10</h4>
+					</div>
+					<div class="col-md-8 col-12  my-auto">
+						<h4 class="lightfont text-right p-0 m-0">Download on <i class="fab fa-spotify"></i></h4>
+					</div>
+				</div>
+				<div class="row blue darker py-2 modern musics" data-src="http://snd.tebyan.net/1388/02/20090520114340751.mp3">
+					<div class="col-md-1 col-2   my-auto">
+						<i class="fas fa-play"></i>
+					</div>
+					<div class="col-md-2 col-8  my-auto">
+						<h3 class="lightfont">Night Bird</h3>
+						
+					</div>
+					<div class="col-md-1 col-2 number my-auto">
+						<h4 class="lightfont">3:10</h4>
+					</div>
+					<div class="col-md-8 col-12  my-auto">
+						<h4 class="lightfont text-right p-0 m-0">Download on <i class="fab fa-spotify"></i></h4>
+					</div>
+				</div>
+				<div class="row blue py-2 modern musics" data-src="http://snd.tebyan.net/1388/02/20090520114341423.mp3">
+					<div class="col-md-1 col-2   my-auto">
+						<i class="fas fa-play"></i>
+					</div>
+					<div class="col-md-2 col-8  my-auto">
+						<h3 class="lightfont">Night Bird</h3>
+					</div>
+					<div class="col-md-1 col-2 number my-auto">
+						<h4 class="lightfont">3:10</h4>
+					</div>
+					<div class="col-md-8 col-12  my-auto">
+						<h4 class="lightfont text-right p-0 m-0">Download on <i class="fab fa-spotify"></i></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<br/>
+		
+		<a id="album2"><div class="container text-white">
+		
+			<div class="row blue serif">
+				<div class="col-md-5  my-auto">
+					<img class="my-5" src="cover.png" style="width:100%; height:auto;"></img>
+					
+				</div>
+				
+				<div class="col-md-7 my-auto">
+					<div class="row">
+						<div class="col mb-5 black">
+							<h1 class=" display-4">NightBird</h1>
+							<h3 class="">( Morgh-e Shab )</h3>
+						</div>
+						<div class="col mb-5 black justify-content-center text-center loading">
+							
+								<div class="clock-loader mx-auto" ></div>
+								<h4 class="text-white modern">Please wait...</h4>
+							
+						</div>
+					</div>
+					
+					<div class="col my-auto">
+						<div class="row mb-md-0 mb-3">
+							<div class="col-sm-5">
+								<h2 class="lightfont ">NightBird</h2>
+							</div>
+							<div class="col-sm-7">
+								
+							</div>
+						</div>
+						
+						<!--<div class="row">
+							<div class="col-1">
+								<i class="fas fa-play fa-lg"></i>
+								
+							</div>
+							<div class="col-11">
+								<input type="range" class="custom-range" id="customRange1" min="0" max="100" value="0" step="1">
+								
+							</div>
+							
+						</div>-->
+						
+					</div>
+				</div>
+				
+			</div>
+			<div class="hoverable">
+				<div class="row blue darker py-2 modern musics" data-src="http://snd.tebyan.net/1388/02/20090520102449788.mp3">
+					<div class="col-md-1 col-2 my-auto">
+						<i class="fas fa-play"></i>
+					</div>
+					<div class="col-md-2 col-8 my-auto">
+						<h3 class="lightfont">Night Bird</h3>
+						
+					</div>
+					<div class="col-md-1 col-2 number my-auto">
+						<h4 class="lightfont">3:10</h4>
+					</div>
+					<div class="col-md-8 col-12 my-auto">
+						<h4 class="lightfont text-center text-md-right p-0 m-0">Download on <i class="fab fa-spotify"></i></h4>
+					</div>
+				</div>
+				<div class="row blue py-2 modern musics" data-src="http://snd.tebyan.net/1388/02/20090520102440991.mp3">
+					<div class="col-md-1 col-2   my-auto">
+						<i class="fas fa-play"></i>
+					</div>
+					<div class="col-md-2 col-8  my-auto">
+						<h3 class="lightfont">Night Bird</h3>
+						
+					</div>
+					<div class="col-md-1 col-2 number my-auto">
+						<h4 class="lightfont">3:10</h4>
+					</div>
+					<div class="col-md-8 col-12  my-auto">
+						<h4 class="lightfont text-right p-0 m-0">Download on <i class="fab fa-spotify"></i></h4>
+					</div>
+				</div>
+				<div class="row blue darker py-2 modern musics" data-src="http://snd.tebyan.net/1388/02/20090520102441804.mp3">
+					<div class="col-md-1 col-2   my-auto">
+						<i class="fas fa-play"></i>
+					</div>
+					<div class="col-md-2 col-8  my-auto">
+						<h3 class="lightfont">Night Bird</h3>
+						
+					</div>
+					<div class="col-md-1 col-2 number my-auto">
+						<h4 class="lightfont">3:10</h4>
+					</div>
+					<div class="col-md-8 col-12  my-auto">
+						<h4 class="lightfont text-right p-0 m-0">Download on <i class="fab fa-spotify"></i></h4>
+					</div>
+				</div>
+				<div class="row blue py-2 modern musics" data-src="http://snd.tebyan.net/1388/02/20090520102442460.mp3">
+					<div class="col-md-1 col-2   my-auto">
+						<i class="fas fa-play"></i>
+					</div>
+					<div class="col-md-2 col-8  my-auto">
+						<h3 class="lightfont">Night Bird</h3>
+					</div>
+					<div class="col-md-1 col-2 number my-auto">
+						<h4 class="lightfont">3:10</h4>
+					</div>
+					<div class="col-md-8 col-12  my-auto">
+						<h4 class="lightfont text-right p-0 m-0">Download on <i class="fab fa-spotify"></i></h4>
+					</div>
+				</div>
+				<div class="row blue darker py-2 modern musics" data-src="http://snd.tebyan.net/1388/02/20090520114340751.mp3">
+					<div class="col-md-1 col-2   my-auto">
+						<i class="fas fa-play"></i>
+					</div>
+					<div class="col-md-2 col-8  my-auto">
+						<h3 class="lightfont">Night Bird</h3>
+						
+					</div>
+					<div class="col-md-1 col-2 number my-auto">
+						<h4 class="lightfont">3:10</h4>
+					</div>
+					<div class="col-md-8 col-12  my-auto">
+						<h4 class="lightfont text-right p-0 m-0">Download on <i class="fab fa-spotify"></i></h4>
+					</div>
+				</div>
+				<div class="row blue py-2 modern musics" data-src="http://snd.tebyan.net/1388/02/20090520114341423.mp3">
+					<div class="col-md-1 col-2   my-auto">
+						<i class="fas fa-play"></i>
+					</div>
+					<div class="col-md-2 col-8  my-auto">
+						<h3 class="lightfont">Night Bird</h3>
+					</div>
+					<div class="col-md-1 col-2 number my-auto">
+						<h4 class="lightfont">3:10</h4>
+					</div>
+					<div class="col-md-8 col-12  my-auto">
+						<h4 class="lightfont text-right p-0 m-0">Download on <i class="fab fa-spotify"></i></h4>
+					</div>
+				</div>
+			</div>
+		</div>
+		</a>
+		<a href="#album2">.</a>
+		<br/>
+		
+		
+		<script>
+			$(".loading" ).hide();
+			
+			var vid = document.getElementById("mya");
+			vid.onloadstart = function() {
+				$(".loading" ).show();
+				$("#mya" ).hide();
+			}; 
+			vid.onloadeddata = function() {
+				$(".loading" ).hide();
+				$("#mya" ).show();
+			}; 
+			$(document).ready(function(){
+				$(".musics" ).click(function() {
+					  $("#mya").attr("src",$(this).attr("data-src"));
+					  $(".musics").removeClass("active-c");
+						$(this).addClass("active-c");
+				});
+				 
+			});
+		</script>
+		<footer id="footer" class="d-flex-column text-center">
+<section class="mt-5 subscribe-area text-white">
+  <hr class="mt-0">
+  <!--Social buttons-->
+  <div class="text-center">
+    <ul class="list-unstyled list-inline">
+      <li class="list-inline-item">
+        <a href="https://www.instagram.com/targolkhalighi/" class="sbtn btn-large mx-1" title="Facebook">
+          <i class="fab fa-instagram fa-5x"></i>
+        </a>
+		
+      </li>
+      
+      
+      <li class="list-inline-item">
+        <a href="https://www.youtube.com/channel/UCWB-1ZYnECtRtKUODhUaxKA" class="sbtn btn-large mx-1" title="Youtube">
+          <i class="fab fa-youtube fa-5x"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <hr class="mb-0">
+  <div class="py-3 text-center">
+    Targol Khalighi 
+    <script>
+      document.write(new Date().getFullYear())
+    </script> All Rights Reserved
+  </div>
+</section>
+ </footer> 	
+	</body>
+	
+</html>
